@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto:wght@400;900&family=Ubuntu:wght@300&display=swap%27');
+
+.Container {
+    flex: 1;
+    height: calc(100%-(1rem));
+    width: 100%;
+    margin: 1rem;
+    background-color: rgba(255, 255, 255, 0.0);
+    display: flex;
+}
+
+.panel {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.vertical-line {
+    height: 100%;
+    border-left: 0.1rem solid rgba(255, 255, 255, 0.3);
+}
+
+.left {
+    margin: 5rem;
+    text-align: left;
+}
+
+.panel.left > h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 5rem;
+    font-weight: 700;
+    user-select: none;
+    color: white;
+    float: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    width: fit-content;
+}
+
+.panel.left > p {
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+}
+
+.right {
+    margin: 5rem;
+    text-align: left;
+}
+
+.searchPanel {
+    color: white;
+}
+
+.searchBar {
+    border-left: solid 0.3rem rgba(255, 246, 246, 0.938);
+    background-color: rgba(255, 255, 255, 0.08);
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    outline: none;
+}
+
+.searchResults {
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.searchResults > div {
+    color: white;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-weight: 600;
+    max-height: fit-content;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-family: 'Ubuntu';
+    margin: 0;
+}
+
+.information a:first-child h1 {
+    align-items: baseline;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+img {
+    width: 100px;
+    height: 26px;
+    margin-right: .75rem;
+}
+
+.information {
+    color: white;
+    margin-top: auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem 2rem;
+    border-left: 4px solid;
+}
